@@ -1,24 +1,514 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bOG-eh-p9S">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Make My Trip-->
+        <scene sceneID="xx0-by-Gc6">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="6We-2F-dVp" customClass="makemytrip" customModule="MultiPlatform" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xij-DD-Lai">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ble-ob-vl1">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ble-ob-vl1" firstAttribute="top" secondItem="rCR-JR-rfW" secondAttribute="top" id="BBw-hG-8N5"/>
+                            <constraint firstItem="rCR-JR-rfW" firstAttribute="trailing" secondItem="ble-ob-vl1" secondAttribute="trailing" id="Pjk-DU-L6F"/>
+                            <constraint firstItem="rCR-JR-rfW" firstAttribute="bottom" secondItem="ble-ob-vl1" secondAttribute="bottom" id="n4q-q8-Bpb"/>
+                            <constraint firstItem="ble-ob-vl1" firstAttribute="leading" secondItem="rCR-JR-rfW" secondAttribute="leading" id="zdg-xG-LFA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rCR-JR-rfW"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Make My Trip" id="A2Z-Jx-8CY"/>
+                    <connections>
+                        <outlet property="webView" destination="ble-ob-vl1" id="ILW-7S-Wa7"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNR-1M-IxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2917" y="-1586"/>
+        </scene>
+        <!--Oyo Rooms-->
+        <scene sceneID="WCq-fy-E72">
+            <objects>
+                <viewController id="HkG-Jm-68f" customClass="oyo" customModule="MultiPlatform" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JYr-dX-oxg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIu-Jm-fmS">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cIu-Jm-fmS" firstAttribute="leading" secondItem="ZvT-Pl-2Gn" secondAttribute="leading" id="Ebd-se-Rcj"/>
+                            <constraint firstItem="ZvT-Pl-2Gn" firstAttribute="trailing" secondItem="cIu-Jm-fmS" secondAttribute="trailing" id="LBJ-tu-yR8"/>
+                            <constraint firstItem="cIu-Jm-fmS" firstAttribute="top" secondItem="ZvT-Pl-2Gn" secondAttribute="top" id="WPH-Ob-pg6"/>
+                            <constraint firstItem="ZvT-Pl-2Gn" firstAttribute="bottom" secondItem="cIu-Jm-fmS" secondAttribute="bottom" id="u6m-JK-s1P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZvT-Pl-2Gn"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Oyo Rooms" id="5L5-RD-NaM"/>
+                    <connections>
+                        <outlet property="webView" destination="cIu-Jm-fmS" id="6dz-7A-7iG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RVq-cd-XKD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3602" y="-1582"/>
+        </scene>
+        <!--RedBus-->
+        <scene sceneID="Znl-PA-2Ub">
+            <objects>
+                <viewController id="xed-sk-Dqp" customClass="redbus" customModule="MultiPlatform" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dtc-GJ-PrX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="voX-66-bQR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rTM-ic-IPn" firstAttribute="trailing" secondItem="voX-66-bQR" secondAttribute="trailing" id="Ftw-ZK-zsw"/>
+                            <constraint firstItem="rTM-ic-IPn" firstAttribute="bottom" secondItem="voX-66-bQR" secondAttribute="bottom" id="LpK-8o-Qqg"/>
+                            <constraint firstItem="voX-66-bQR" firstAttribute="leading" secondItem="rTM-ic-IPn" secondAttribute="leading" id="fSN-Kj-ObJ"/>
+                            <constraint firstItem="voX-66-bQR" firstAttribute="top" secondItem="rTM-ic-IPn" secondAttribute="top" id="kxl-EN-4Ct"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rTM-ic-IPn"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RedBus" id="6AC-Dx-srp"/>
+                    <connections>
+                        <outlet property="webView" destination="voX-66-bQR" id="v09-gB-jQc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pQn-zc-57Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4275" y="-1586"/>
+        </scene>
+        <!--Google Flights-->
+        <scene sceneID="7aY-c5-8gE">
+            <objects>
+                <viewController id="2YH-2Y-fpZ" customClass="googleflight" customModule="MultiPlatform" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cdm-o7-YfB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c39-r1-eHt">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bht-NA-Dl4" firstAttribute="bottom" secondItem="c39-r1-eHt" secondAttribute="bottom" id="WJ4-vC-s7m"/>
+                            <constraint firstItem="c39-r1-eHt" firstAttribute="leading" secondItem="bht-NA-Dl4" secondAttribute="leading" id="Wut-ix-55U"/>
+                            <constraint firstItem="c39-r1-eHt" firstAttribute="top" secondItem="bht-NA-Dl4" secondAttribute="top" id="htj-3N-sSy"/>
+                            <constraint firstItem="bht-NA-Dl4" firstAttribute="trailing" secondItem="c39-r1-eHt" secondAttribute="trailing" id="l3M-mZ-5Vi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bht-NA-Dl4"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Google Flights" id="2Xr-oM-s3c"/>
+                    <connections>
+                        <outlet property="webView" destination="c39-r1-eHt" id="ECg-YU-fhZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xbQ-XD-2JT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4955" y="-1589"/>
+        </scene>
+        <!--PayTM-->
+        <scene sceneID="SeN-3k-qQB">
+            <objects>
+                <viewController id="dpj-sE-DmF" customClass="paytm" customModule="MultiPlatform" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jOq-g8-Eib">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tiv-BV-qXW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tiv-BV-qXW" firstAttribute="leading" secondItem="C3l-sh-alA" secondAttribute="leading" id="5QT-hB-WNA"/>
+                            <constraint firstItem="tiv-BV-qXW" firstAttribute="top" secondItem="C3l-sh-alA" secondAttribute="top" id="R1q-YT-NhV"/>
+                            <constraint firstItem="C3l-sh-alA" firstAttribute="bottom" secondItem="tiv-BV-qXW" secondAttribute="bottom" id="ci0-UD-MCr"/>
+                            <constraint firstItem="C3l-sh-alA" firstAttribute="trailing" secondItem="tiv-BV-qXW" secondAttribute="trailing" id="hze-NW-Eqx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="C3l-sh-alA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PayTM" id="AZA-Tx-cyF"/>
+                    <connections>
+                        <outlet property="webView" destination="tiv-BV-qXW" id="aNG-RV-a4T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hu3-DJ-C0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2902" y="-873"/>
+        </scene>
+        <!--MobiKwik-->
+        <scene sceneID="CqT-vZ-DVJ">
+            <objects>
+                <viewController id="8af-I5-NKQ" customClass="mobikwik" customModule="MultiPlatform" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FYl-TB-mei">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OYr-6f-QuG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uLQ-63-az8" firstAttribute="trailing" secondItem="OYr-6f-QuG" secondAttribute="trailing" id="ExC-yE-cRi"/>
+                            <constraint firstItem="uLQ-63-az8" firstAttribute="bottom" secondItem="OYr-6f-QuG" secondAttribute="bottom" id="OWn-3B-hcy"/>
+                            <constraint firstItem="OYr-6f-QuG" firstAttribute="leading" secondItem="uLQ-63-az8" secondAttribute="leading" id="VwN-2L-QeC"/>
+                            <constraint firstItem="OYr-6f-QuG" firstAttribute="top" secondItem="uLQ-63-az8" secondAttribute="top" id="bQC-jg-pzC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uLQ-63-az8"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="MobiKwik" id="2w7-Op-ZB5"/>
+                    <connections>
+                        <outlet property="webView" destination="OYr-6f-QuG" id="kjB-JY-K8n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Jk-k1-3Th" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3609" y="-873"/>
+        </scene>
+        <!--All In One -->
+        <scene sceneID="Vdi-Uw-nTH">
+            <objects>
+                <tableViewController id="aZh-Uc-nKd" customClass="TableViewController" customModule="MultiPlatform" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="lab-ZB-uVx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" textLabel="dKq-y1-YHT" detailTextLabel="eWc-qe-9Z2" rowHeight="54" style="IBUITableViewCellStyleValue1" id="MKp-bd-bP9">
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="54"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MKp-bd-bP9" id="KA0-3v-ziP">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dKq-y1-YHT">
+                                            <rect key="frame" x="16" y="17" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eWc-qe-9Z2">
+                                            <rect key="frame" x="320.5" y="20" width="38.5" height="17"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aZh-Uc-nKd" id="YDb-eG-nZy"/>
+                            <outlet property="delegate" destination="aZh-Uc-nKd" id="Jhn-8P-isQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="All In One " id="ffY-bi-czT"/>
+                    <connections>
+                        <segue destination="9ON-l8-cLb" kind="show" identifier="A" id="wD2-ea-F4z"/>
+                        <segue destination="EIO-z0-7Sb" kind="show" identifier="B" id="mdp-55-8o3"/>
+                        <segue destination="WD3-xF-uWn" kind="show" identifier="C" id="FlM-ug-OTR"/>
+                        <segue destination="YdD-yA-8af" kind="show" identifier="zomato" id="vnj-M2-dXQ"/>
+                        <segue destination="HOu-31-eBL" kind="show" identifier="ubereats" id="VDh-6W-vpv"/>
+                        <segue destination="sC1-n3-sMO" kind="show" identifier="swiggy" id="FPh-qw-PkT"/>
+                        <segue destination="YdN-kt-YUQ" kind="show" identifier="foodpanda" id="gAE-Xc-2JE"/>
+                        <segue destination="dpj-sE-DmF" kind="show" identifier="paytm" id="FFJ-KF-w9b"/>
+                        <segue destination="8af-I5-NKQ" kind="show" identifier="mobikwik" id="HZz-Vd-VU3"/>
+                        <segue destination="6We-2F-dVp" kind="show" identifier="makemytrip" id="Uqb-rr-CIc"/>
+                        <segue destination="HkG-Jm-68f" kind="show" identifier="oyo" id="nsW-KU-eK7"/>
+                        <segue destination="xed-sk-Dqp" kind="show" identifier="redbus" id="5hA-ou-Yvw"/>
+                        <segue destination="2YH-2Y-fpZ" kind="show" identifier="googleflight" id="DrN-3r-Coz"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y6a-az-4qd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2080.8000000000002" y="-135.38230884557723"/>
+        </scene>
+        <!--Zomato-->
+        <scene sceneID="E2y-B6-oB8">
+            <objects>
+                <viewController id="YdD-yA-8af" customClass="zomato" customModule="MultiPlatform" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="und-Tp-3JY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qpz-vR-ejZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zqP-IX-rRj" firstAttribute="bottom" secondItem="Qpz-vR-ejZ" secondAttribute="bottom" id="2G6-Ug-RYp"/>
+                            <constraint firstItem="zqP-IX-rRj" firstAttribute="trailing" secondItem="Qpz-vR-ejZ" secondAttribute="trailing" id="GNC-PE-qia"/>
+                            <constraint firstItem="Qpz-vR-ejZ" firstAttribute="top" secondItem="zqP-IX-rRj" secondAttribute="top" id="gRk-vX-7Cs"/>
+                            <constraint firstItem="Qpz-vR-ejZ" firstAttribute="leading" secondItem="zqP-IX-rRj" secondAttribute="leading" id="laP-nR-Qvs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zqP-IX-rRj"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Zomato" id="1h2-S9-xba"/>
+                    <connections>
+                        <outlet property="webView" destination="Qpz-vR-ejZ" id="PUX-3O-quF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Euw-ft-xqE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2804" y="-135"/>
+        </scene>
+        <!--Uber Eats-->
+        <scene sceneID="1pQ-0a-Ubg">
+            <objects>
+                <viewController id="HOu-31-eBL" customClass="ubereats" customModule="MultiPlatform" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BFW-Nb-Oa6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ep9-3N-35b">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3V9-rg-oXF" firstAttribute="trailing" secondItem="Ep9-3N-35b" secondAttribute="trailing" id="CTO-fg-hQd"/>
+                            <constraint firstItem="Ep9-3N-35b" firstAttribute="leading" secondItem="3V9-rg-oXF" secondAttribute="leading" id="TsH-NL-B9l"/>
+                            <constraint firstItem="Ep9-3N-35b" firstAttribute="top" secondItem="3V9-rg-oXF" secondAttribute="top" id="cQw-sD-vEk"/>
+                            <constraint firstItem="3V9-rg-oXF" firstAttribute="bottom" secondItem="Ep9-3N-35b" secondAttribute="bottom" id="okV-wG-J1q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3V9-rg-oXF"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Uber Eats" id="dSF-rj-ZLb"/>
+                    <connections>
+                        <outlet property="webView" destination="Ep9-3N-35b" id="zT8-VT-EN8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yLc-XI-bKs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3518" y="-135"/>
+        </scene>
+        <!--Swiggy-->
+        <scene sceneID="Scn-nI-JL8">
+            <objects>
+                <viewController id="sC1-n3-sMO" customClass="swiggy" customModule="MultiPlatform" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Pd-7A-EZe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUr-Et-ca7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iUr-Et-ca7" firstAttribute="top" secondItem="IUM-wN-bZ9" secondAttribute="top" id="Axp-bV-yFN"/>
+                            <constraint firstItem="IUM-wN-bZ9" firstAttribute="bottom" secondItem="iUr-Et-ca7" secondAttribute="bottom" id="T1l-rb-eop"/>
+                            <constraint firstItem="iUr-Et-ca7" firstAttribute="leading" secondItem="IUM-wN-bZ9" secondAttribute="leading" id="ab8-vV-sNB"/>
+                            <constraint firstItem="IUM-wN-bZ9" firstAttribute="trailing" secondItem="iUr-Et-ca7" secondAttribute="trailing" id="fL6-Jh-o8J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IUM-wN-bZ9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Swiggy" id="zKa-Lo-yu9"/>
+                    <connections>
+                        <outlet property="webView" destination="iUr-Et-ca7" id="icG-6H-14v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5r-RQ-hlx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4266" y="-135"/>
+        </scene>
+        <!--FoodPanda-->
+        <scene sceneID="e9d-On-DVX">
+            <objects>
+                <viewController id="YdN-kt-YUQ" customClass="foodpanda" customModule="MultiPlatform" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8n7-jL-OnX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rxn-3A-Y1P">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rxn-3A-Y1P" firstAttribute="top" secondItem="NLb-oL-gFB" secondAttribute="top" id="5Dl-cb-9TA"/>
+                            <constraint firstItem="NLb-oL-gFB" firstAttribute="bottom" secondItem="rxn-3A-Y1P" secondAttribute="bottom" id="Gf4-sj-Vb0"/>
+                            <constraint firstItem="rxn-3A-Y1P" firstAttribute="leading" secondItem="NLb-oL-gFB" secondAttribute="leading" id="VlB-P4-awq"/>
+                            <constraint firstItem="NLb-oL-gFB" firstAttribute="trailing" secondItem="rxn-3A-Y1P" secondAttribute="trailing" id="nON-5G-B6R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NLb-oL-gFB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="FoodPanda" id="oaW-UE-ejx"/>
+                    <connections>
+                        <outlet property="webView" destination="rxn-3A-Y1P" id="spY-ND-GFw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="niu-NL-pGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5009" y="-135"/>
+        </scene>
+        <!--BigBasket-->
+        <scene sceneID="bBA-HP-YT4">
+            <objects>
+                <viewController id="EIO-z0-7Sb" customClass="ViewController2" customModule="MultiPlatform" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XeK-ko-1XR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E5O-PV-JcG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E5O-PV-JcG" firstAttribute="bottom" secondItem="pXj-M9-lQE" secondAttribute="bottom" id="HUS-C4-Zh7"/>
+                            <constraint firstItem="E5O-PV-JcG" firstAttribute="leading" secondItem="XeK-ko-1XR" secondAttribute="leading" id="QNA-kF-ZYV"/>
+                            <constraint firstAttribute="trailing" secondItem="E5O-PV-JcG" secondAttribute="trailing" id="b6n-hJ-eIn"/>
+                            <constraint firstItem="E5O-PV-JcG" firstAttribute="top" secondItem="pXj-M9-lQE" secondAttribute="top" id="bQo-Bv-hXn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pXj-M9-lQE"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="BigBasket" id="nJV-Uv-qa4"/>
+                    <connections>
+                        <outlet property="webView" destination="E5O-PV-JcG" id="ZrK-aC-3Kg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xda-YY-G6v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1142" y="634"/>
+        </scene>
+        <!--FlipKart-->
+        <scene sceneID="nx6-aW-ZZd">
+            <objects>
+                <viewController id="WD3-xF-uWn" customClass="ViewController3" customModule="MultiPlatform" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XhH-gt-eZL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9uP-gG-9QC">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9uP-gG-9QC" firstAttribute="bottom" secondItem="yni-oO-efX" secondAttribute="bottom" id="EsD-Cl-ehl"/>
+                            <constraint firstItem="9uP-gG-9QC" firstAttribute="top" secondItem="yni-oO-efX" secondAttribute="top" id="FfQ-ei-kty"/>
+                            <constraint firstItem="9uP-gG-9QC" firstAttribute="trailing" secondItem="XhH-gt-eZL" secondAttribute="trailingMargin" constant="16" id="ceR-UN-3N6"/>
+                            <constraint firstItem="9uP-gG-9QC" firstAttribute="leading" secondItem="XhH-gt-eZL" secondAttribute="leadingMargin" constant="-16" id="e7e-Lb-SW7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yni-oO-efX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="FlipKart" id="QEN-7E-72R"/>
+                    <connections>
+                        <outlet property="webView" destination="9uP-gG-9QC" id="Tcv-ic-RQH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8T2-gU-hqR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1814" y="634"/>
+        </scene>
+        <!--Amazon-->
+        <scene sceneID="8Oi-aB-5qx">
+            <objects>
+                <viewController id="9ON-l8-cLb" customClass="ViewController1" customModule="MultiPlatform" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ufo-rJ-4ty">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brY-1f-ceF">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hf2-fK-SfA" firstAttribute="trailing" secondItem="brY-1f-ceF" secondAttribute="trailing" id="8XU-ee-IF5"/>
+                            <constraint firstItem="brY-1f-ceF" firstAttribute="leading" secondItem="hf2-fK-SfA" secondAttribute="leading" id="CUl-9w-fmw"/>
+                            <constraint firstItem="hf2-fK-SfA" firstAttribute="bottom" secondItem="brY-1f-ceF" secondAttribute="bottom" id="Rhe-Ik-1Kx"/>
+                            <constraint firstItem="brY-1f-ceF" firstAttribute="top" secondItem="hf2-fK-SfA" secondAttribute="top" id="sPq-ig-IlM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hf2-fK-SfA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Amazon" id="BJD-lj-nLu"/>
+                    <connections>
+                        <outlet property="webView" destination="brY-1f-ceF" id="YAP-MR-QwW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asc-RB-mvp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="366" y="634"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dwz-J0-zyp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F91-Vj-rOf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="TOR-eU-pri"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YkS-IZ-y1E">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aZh-Uc-nKd" kind="relationship" relationship="rootViewController" id="qAz-DI-YKX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeo-ZQ-EBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1356" y="-135.38230884557723"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cN6-bo-JLb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bOG-eh-p9S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H4E-me-4Wp">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="F91-Vj-rOf" kind="relationship" relationship="viewControllers" id="Yew-ah-E7R"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6lK-0K-0G7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="366" y="-135"/>
         </scene>
     </scenes>
 </document>

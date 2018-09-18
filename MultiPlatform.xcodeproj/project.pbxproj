@@ -8,20 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		A6E2B04D21511BC50094898E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2B04C21511BC50094898E /* AppDelegate.swift */; };
-		A6E2B04F21511BC50094898E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2B04E21511BC50094898E /* ViewController.swift */; };
+		A6E2B04F21511BC50094898E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2B04E21511BC50094898E /* TableViewController.swift */; };
 		A6E2B05221511BC50094898E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E2B05021511BC50094898E /* Main.storyboard */; };
 		A6E2B05421511BC90094898E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E2B05321511BC90094898E /* Assets.xcassets */; };
 		A6E2B05721511BC90094898E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E2B05521511BC90094898E /* LaunchScreen.storyboard */; };
+		A6E2B05F21511D250094898E /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2B05E21511D250094898E /* ViewController1.swift */; };
+		A6E2B06121511D410094898E /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2B06021511D410094898E /* ViewController2.swift */; };
+		A6E2B06321511D550094898E /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2B06221511D550094898E /* ViewController3.swift */; };
+		A6E2B068215155E00094898E /* zomato.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2B067215155E00094898E /* zomato.swift */; };
+		A6E2B06A215156020094898E /* ubereats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2B069215156020094898E /* ubereats.swift */; };
+		A6E2B06C215156160094898E /* swiggy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2B06B215156160094898E /* swiggy.swift */; };
+		A6E2B06E2151563B0094898E /* foodpanda.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2B06D2151563B0094898E /* foodpanda.swift */; };
+		A6E2B072215181300094898E /* paytm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2B071215181300094898E /* paytm.swift */; };
+		A6E2B074215181420094898E /* mobikwik.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2B073215181420094898E /* mobikwik.swift */; };
+		A6E2B076215181610094898E /* makemytrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2B075215181610094898E /* makemytrip.swift */; };
+		A6E2B0782151817E0094898E /* oyo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2B0772151817E0094898E /* oyo.swift */; };
+		A6E2B07A2151818E0094898E /* redbus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2B0792151818E0094898E /* redbus.swift */; };
+		A6E2B07C215181A30094898E /* googleflight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E2B07B215181A30094898E /* googleflight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A6E2B04921511BC50094898E /* MultiPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E2B04C21511BC50094898E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6E2B04E21511BC50094898E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6E2B04E21511BC50094898E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A6E2B05121511BC50094898E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6E2B05321511BC90094898E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6E2B05621511BC90094898E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6E2B05821511BC90094898E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E2B05E21511D250094898E /* ViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		A6E2B06021511D410094898E /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		A6E2B06221511D550094898E /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		A6E2B067215155E00094898E /* zomato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zomato.swift; sourceTree = "<group>"; };
+		A6E2B069215156020094898E /* ubereats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ubereats.swift; sourceTree = "<group>"; };
+		A6E2B06B215156160094898E /* swiggy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiggy.swift; sourceTree = "<group>"; };
+		A6E2B06D2151563B0094898E /* foodpanda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodpanda.swift; sourceTree = "<group>"; };
+		A6E2B071215181300094898E /* paytm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paytm.swift; sourceTree = "<group>"; };
+		A6E2B073215181420094898E /* mobikwik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobikwik.swift; sourceTree = "<group>"; };
+		A6E2B075215181610094898E /* makemytrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makemytrip.swift; sourceTree = "<group>"; };
+		A6E2B0772151817E0094898E /* oyo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oyo.swift; sourceTree = "<group>"; };
+		A6E2B0792151818E0094898E /* redbus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redbus.swift; sourceTree = "<group>"; };
+		A6E2B07B215181A30094898E /* googleflight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = googleflight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +81,58 @@
 			isa = PBXGroup;
 			children = (
 				A6E2B04C21511BC50094898E /* AppDelegate.swift */,
-				A6E2B04E21511BC50094898E /* ViewController.swift */,
+				A6E2B04E21511BC50094898E /* TableViewController.swift */,
 				A6E2B05021511BC50094898E /* Main.storyboard */,
 				A6E2B05321511BC90094898E /* Assets.xcassets */,
 				A6E2B05521511BC90094898E /* LaunchScreen.storyboard */,
 				A6E2B05821511BC90094898E /* Info.plist */,
+				A6E2B070215181110094898E /* Travelling */,
+				A6E2B06F2151810A0094898E /* Payment */,
+				A6E2B066215155AF0094898E /* Food Sites */,
+				A6E2B0642151557A0094898E /* Shopping Sites */,
 			);
 			path = MultiPlatform;
+			sourceTree = "<group>";
+		};
+		A6E2B0642151557A0094898E /* Shopping Sites */ = {
+			isa = PBXGroup;
+			children = (
+				A6E2B05E21511D250094898E /* ViewController1.swift */,
+				A6E2B06021511D410094898E /* ViewController2.swift */,
+				A6E2B06221511D550094898E /* ViewController3.swift */,
+			);
+			path = "Shopping Sites";
+			sourceTree = "<group>";
+		};
+		A6E2B066215155AF0094898E /* Food Sites */ = {
+			isa = PBXGroup;
+			children = (
+				A6E2B067215155E00094898E /* zomato.swift */,
+				A6E2B069215156020094898E /* ubereats.swift */,
+				A6E2B06B215156160094898E /* swiggy.swift */,
+				A6E2B06D2151563B0094898E /* foodpanda.swift */,
+			);
+			path = "Food Sites";
+			sourceTree = "<group>";
+		};
+		A6E2B06F2151810A0094898E /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				A6E2B071215181300094898E /* paytm.swift */,
+				A6E2B073215181420094898E /* mobikwik.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		A6E2B070215181110094898E /* Travelling */ = {
+			isa = PBXGroup;
+			children = (
+				A6E2B075215181610094898E /* makemytrip.swift */,
+				A6E2B0772151817E0094898E /* oyo.swift */,
+				A6E2B0792151818E0094898E /* redbus.swift */,
+				A6E2B07B215181A30094898E /* googleflight.swift */,
+			);
+			path = Travelling;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +206,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6E2B04F21511BC50094898E /* ViewController.swift in Sources */,
+				A6E2B06A215156020094898E /* ubereats.swift in Sources */,
+				A6E2B06C215156160094898E /* swiggy.swift in Sources */,
+				A6E2B06321511D550094898E /* ViewController3.swift in Sources */,
+				A6E2B05F21511D250094898E /* ViewController1.swift in Sources */,
+				A6E2B06121511D410094898E /* ViewController2.swift in Sources */,
+				A6E2B07C215181A30094898E /* googleflight.swift in Sources */,
+				A6E2B06E2151563B0094898E /* foodpanda.swift in Sources */,
+				A6E2B0782151817E0094898E /* oyo.swift in Sources */,
+				A6E2B04F21511BC50094898E /* TableViewController.swift in Sources */,
+				A6E2B07A2151818E0094898E /* redbus.swift in Sources */,
 				A6E2B04D21511BC50094898E /* AppDelegate.swift in Sources */,
+				A6E2B068215155E00094898E /* zomato.swift in Sources */,
+				A6E2B072215181300094898E /* paytm.swift in Sources */,
+				A6E2B076215181610094898E /* makemytrip.swift in Sources */,
+				A6E2B074215181420094898E /* mobikwik.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

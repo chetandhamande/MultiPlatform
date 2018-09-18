@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  MultiPlatform
-//
-//  Created by Saurabh MIsal on 18/09/18.
-//  Copyright © 2018 Saurabh MIsal. All rights reserved.
-//
+//@ChetanDhamande
 
 import UIKit
 
